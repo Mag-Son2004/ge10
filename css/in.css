@@ -1,0 +1,67 @@
+.content {
+    display: flex;
+    flex-direction: row; /* Or column, depending on your desired layout */
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center; /* Center horizontally */
+}
+
+.inbg {
+    display: flex;
+    align-items: center; /* Not needed if you remove display:flex from .inbg */
+}
+
+.incontent {
+    flex-basis: 900px; /* Initial width - adjust as needed */
+    flex-grow: 0;      /* Prevent growing */
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative; /* Added this line */
+    max-width: 900px;
+    background-color: #C41E3A;
+    background-image: radial-gradient(#d1c1c1 1.3px, transparent 1.3px), radial-gradient(#d1c1c1 1.3px, #C41E3A 1.3px);
+    background-size: 52px 52px;
+    background-position: 0 0, 26px 26px;
+    transition: background-color 0.3s ease-in-out, background-image 0.3s ease-in-out, background-size 0.3s ease-in-out;
+}
+
+.incontent:hover {
+    background-color: #000000;
+    background: radial-gradient(circle, transparent 20%, #000000 20%, #000000 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #000000 20%, #000000 80%, transparent 80%, transparent) 25px 25px, linear-gradient(#f74545 2px, transparent 2px) 0 -1px, linear-gradient(90deg, #f74545 2px, #000000 2px) -1px 0;
+    background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
+    opacity: 1; /* Opacity transition will work as is */
+}
+
+.other {    
+    background-color: #275674;
+    opacity: 1;
+    background-image:  radial-gradient(#d1c1c1 1.3px, transparent 1.3px), radial-gradient(#d1c1c1 1.3px, #275674 1.3px);
+    background-size: 52px 52px;
+    background-position: 0 0,26px 26px;
+    transition: background-color 0.3s ease-in-out, background-image 0.3s ease-in-out, background-size 0.3s ease-in-out;
+}
+
+.other:hover {
+    background-color: #000000;
+    opacity: 1;
+    background: radial-gradient(circle, transparent 20%, #000000 20%, #000000 80%, transparent 80%, transparent), radial-gradient(circle, transparent 20%, #000000 20%, #000000 80%, transparent 80%, transparent) 25px 25px, linear-gradient(#275674 2px, transparent 2px) 0 -1px, linear-gradient(90deg, #275674 2px, #000000 2px) -1px 0;
+    background-size: 50px 50px, 50px 50px, 25px 25px, 25px 25px;
+}
+
+.incontent img {
+    max-width: 100%; /* Image will scale down to fit container */
+    height: auto; /* Maintain aspect ratio */
+    display: block; /* Ensures the image takes up its full width and prevents small space below */
+}
+
+.incontent h2 {
+    padding-right: 10px;
+    position: absolute;
+    bottom: 0; /* Positions it at the bottom */
+    right: 0;  /* Positions it at the right */
+    z-index: 2;
+    font-size: 50px;
+    font-weight: 700;
+    color: beige;
+    text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 5px 5px 0 #000;
+}
