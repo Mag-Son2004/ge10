@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="title" content="Hibalag Christian Night"> 
+    <meta name="description" content="[Silliman University Church] [CHURCH] [August 21, 2024]"> 
+    <meta id="og-image" property="og:image" content="img/chrisnight (2).jpg">
+    
+    <title></title>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="GE10 WPE: SON MAGALLANES">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    
+    <div id="all">
+
+        <header>
+            <h1 id="Webtitle">GE10 WPE</h1>
+            <h2>SON MAGALLANES</h2>
+        </header>
+
+        <main class="squarebg">
+            <div id="headerbutton">
+                <a href="index.html">
+                    <p>
+                        <i class="fa-solid fa-house"></i> Home
+                    </p>
+                </a>
+
+                <a href="church.html">
+                    <p>
+                        <i class="fa-solid fa-place-of-worship"></i> Church
+                    </p>
+                </a>
+
+                <a href="classroom.html">
+                    <p>
+                        <i class="fa-solid fa-school-flag"></i> Classroom
+                    </p>
+                </a>
+
+                <a href="community.html">
+                    <p>
+                        <i class="fa-solid fa-handshake-angle"></i> Community
+                    </p>
+                </a>
+
+                <a href="court.html">
+                    <p>
+                        <i class="fa-solid fa-baseball-bat-ball"></i> Court
+                    </p>
+                </a>
+
+                <a href="culture.html">
+                    <p>
+                        <i class="fa-solid fa-feather-pointed"></i> Culture
+                    </p>
+                </a>
+
+                <a href="aboutme.html">
+                    <p>
+                        <i class="fa-solid fa-circle-question"></i> About Me
+                    </p>
+                </a>
+            </div>
+
+            <div id="infobox">
+                <div id="infoleft">
+                    <div class="infoimg">
+                        <img src="" alt="Event Image" id="eventImage">
+                    </div>
+                </div>
+                <div id="inforight">
+                    <div class="infotext">
+                        <p class="point">Event:</p>
+                        <p class="info metatitle" id="eventTitle"></p>
+                        <p class="point">Organizer:</p>
+                        <p class="info" id="eventOrganizer"></p>
+                        <p class="point">Category:</p>
+                        <p class="info" id="eventCategory"></p>
+                        <p class="point">Date:</p>
+                        <p class="info" id="eventDate"></p>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="content">
+                <p class="parahead">
+                    What?
+                </p>
+                <p class="para metadesc">
+                    I attended the Hibalag Christian Night event on August 21 during the Hibalag Festival. The event was held at Ravello Field. Its objective was to bring people together to worship, share the message of God, and celebrate faith through music and fellowship. My role was as an audience member, listening and enjoying the performances. I attended with my friends, while the singers and speakers delivered inspiring messages about God, and the Fellowship Band led the crowd in lively and energetic worship.
+                </p>
+
+                <p class="parahead">
+                    So What?
+                </p>
+                <p class="para">
+                    The event deepened my appreciation for the power of music and community in expressing faith. I initially expected a more formal atmosphere, but I was surprised by how lively and engaging it was. The Fellowship Band made a strong impression with their energy and heartfelt songs, creating an uplifting and joyful experience. The most satisfying part of the event was hearing the group’s message about God, which was both inspiring and touching. This activity aligned with my values of faith and fellowship, and it reminded me of the importance of celebrating faith with others.
+                </p>
+
+                <p class="parahead">
+                    Now What?
+                </p>
+                <p class="para">
+                    This experience strengthened my faith and made me realize the importance of being part of a faith-based community. I plan to apply what I learned by being more active in church and attending similar events in the future. Moving forward, I want to engage more with groups that promote spiritual growth and fellowship. I see the benefits of events like this because they inspire individuals and create a sense of unity. If I could attend this event again, I would participate more actively, perhaps by joining in the singing or discussions.
+                </p>
+                
+                <br>
+                <p class="para">
+                    Because of this activity, I am more motivated to strengthen my faith and be part of a supportive and joyful faith community.
+                </p>
+            </div>
+
+            <hr>
+
+            <div class="gallery">
+                <p>Gallery</p>
+                <div class="eventimg">
+                    <img src="img/chrisnight (1).jpg" alt="">
+                    <img src="img/chrisnight (2).jpg" alt="">
+                    <img src="img/chrisnight (3).jpg" alt="">
+                    <img src="img/chrisnight (4).jpg" alt="">
+                    <img src="img/chrisnight (5).jpg" alt="">
+                    <img src="img/chrisnight (6).jpg" alt="">
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div id="credits">
+                <h2>Webpage powered by HTML, CSS, and JS</h2>
+                <h2>[MMXXIV]</h2>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const title = document.querySelector('meta[name="title"]').getAttribute('content') || '';
+            const description = document.querySelector('meta[name="description"]').getAttribute('content') || '';
+            const imageSrc = document.getElementById('og-image').getAttribute('content') || '';
+
+            const descriptionParts = description.match(/\[(.*?)\]/g);
+
+            document.getElementById('eventTitle').textContent = title;
+            document.getElementById('eventImage').src = imageSrc;
+
+            if (descriptionParts && descriptionParts.length >= 3) {
+                document.getElementById('eventOrganizer').textContent = descriptionParts[0].replace(/[\[\]]/g, '').trim();
+                document.getElementById('eventCategory').textContent = descriptionParts[1].replace(/[\[\]]/g, '').trim();
+                document.getElementById('eventDate').textContent = descriptionParts[2].replace(/[\[\]]/g, '').trim();
+            } else {
+                document.getElementById('eventOrganizer').textContent = "Not available";
+                document.getElementById('eventCategory').textContent = "Not available";
+                document.getElementById('eventDate').textContent = "Not available";
+            }
+
+            document.title = title;
+            document.querySelector('meta[name="title"]').setAttribute('content', title);
+
+            const descWords = description.split(" ");
+            const truncatedDesc = descWords.length > 20 ? descWords.slice(0, 20).join(" ") + "..." : description;
+            document.querySelector('meta[name="description"]').setAttribute('content', truncatedDesc);
+        });
+    </script>
+</body>
+
+</html>

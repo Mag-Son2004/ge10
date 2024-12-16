@@ -5,12 +5,13 @@
     
     <meta property="og:type" content="website">
     
-    <title>SON MAGALLANES | GE 10 WPE</title>
+    <title>COMMUNITY | GE 10 WPE</title>
     <meta name="title" content=""> 
     <meta name="description" content=""> 
     <meta property="og:type" content="website">
-    <meta property="og:site_name" content="GE10 WPE: SON MAGALLANES">
     <meta id="og-image" property="og:image" content="">
+
+    <meta property="og:site_name" content="GE10 WPE: SON MAGALLANES">
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="fav.png" type="image/x-icon">
@@ -74,61 +75,64 @@
                 </a>
             </div>
 
+            
+
             <div class="content">
 
-                <a href="church.html">
-                    <div class="inbg">
-                        <div class="incontent">
-                            <img src="img/church.webp" alt="">
-                            <h2>CHURCH</h2>
-                        </div>
-                    </div>
-                </a>
+                <p class="def">
+                    A community event is a gathering that brings people together to foster relationships and strengthen local bonds. These events, such as festivals, clean-up drives, or fundraisers, reflect shared interests or values, creating a sense of belonging and unity while addressing local needs or celebrating achievements.
+                </p>
 
-                <a href="classroom.html">
-                    <div class="inbg">
-                        <div class="incontent other">
-                            <img src="img/classroom.png" alt="">
-                            <h2>CLASSROOM</h2>
+                <div class="contain">
+                    <div class="eventbox">
+                        <div class="titleevent">
+                            <p>DOST 2024 Youngblood Initiative</p>
+                        </div>
+                        <div>
+                            <div class="imageevent">
+                                <img src="img/dostblood2.jpg" alt="">
+                            </div>
+                            <div class="exploreevent">
+                                <a href="dostblood.html">
+                                    <p>Read More</p>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </a>
 
-                <a href="community.html">
-                    <div class="inbg">
-                        <div class="incontent">
-                            <img src="img/church.webp" alt="">
-                            <h2>COMMUNITY</h2>
+                    <div class="eventbox">
+                        <div class="titleevent">
+                            <p>Ding Ibato! : Dodgeball for a Cause</p>
+                        </div>
+                        <div>
+                            <div class="imageevent">
+                                <img src="img/ibato3.jpg" alt="">
+                            </div>
+                            <div class="exploreevent">
+                                <a href="ibato.html">
+                                    <p>Read More</p>
+                                </a>
+                            </div>
                         </div>
                     </div>
-                </a>
 
-                <a href="court.html">
-                    <div class="inbg">
-                        <div class="incontent other">
-                            <img src="img/court.png" alt="">
-                            <h2>COURT</h2>
+                        <div class="eventbox">
+                            <div class="titleevent">
+                                <p>SilliMove</p>
+                            </div>
+                            <div>
+                                <div class="imageevent">
+                                    <img src="img/sillimove (1).jpg" alt="">
+                                </div>
+                                <div class="exploreevent">
+                                    <a href="sillimove.html">
+                                        <p>Read More</p>
+                                    </a>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </a>
 
-                <a href="culture.html">
-                    <div class="inbg">
-                        <div class="incontent">
-                            <img src="img/church.webp" alt="">
-                            <h2>CULTURE</h2>
-                        </div>
-                    </div>
-                </a>
-
-                <a href="aboutme.html">
-                    <div class="inbg">
-                        <div class="incontent other">
-                            <img src="img/aboutme.png" alt="">
-                            <h2>ABOUT ME</h2>
-                        </div>
-                    </div>
-                </a>
+                </div>
 
             </div>
 
@@ -143,29 +147,6 @@
             </div>
         </footer>
     </div>
-
-    <script>
-        document.addEventListener('DOMContentLoaded', () => {
-    // Set og:image
-    const firstImage = document.querySelector('.eventimg img'); // Select from the gallery
-    if (firstImage) {
-        const ogImageMeta = document.getElementById('og-image');
-        ogImageMeta.content = firstImage.src;
-    }
-
-
-    // Set title and description
-    const metaTitle = document.querySelector('.metatitle').textContent;
-    const metaDesc = document.querySelector('.metadesc').textContent;
-
-    document.title = metaTitle;
-    document.querySelector('meta[name="title"]').setAttribute('content', metaTitle); // Use setAttribute
-
-    const descWords = metaDesc.split(" ");
-    const truncatedDesc = descWords.length > 20 ? descWords.slice(0, 20).join(" ") + "..." : metaDesc;
-    document.querySelector('meta[name="description"]').setAttribute('content', truncatedDesc); // Use setAttribute
-});
-    </script>
 </body>
 
 </html>

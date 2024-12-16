@@ -125,6 +125,8 @@ main {
 }
 
 .infoimg img {
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
     width: 95%;
     border: black solid 4px;
     border-radius: 20px;
