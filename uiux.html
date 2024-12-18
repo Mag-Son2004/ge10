@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="title" content="Designing Intuitive User Experiences: Key UI/UX Strategies"> 
+    <meta name="description" content="[College of Computer Studies] [CLASSROOM] [August 22, 2024]"> 
+    <meta id="og-image" property="og:image" content="img/uiux (3).jpg">
+    
+    <title></title>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="GE10 WPE: SON MAGALLANES">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    
+    <div id="all">
+
+        <header>
+            <h1 id="Webtitle">GE10 WPE</h1>
+            <h2>SON MAGALLANES</h2>
+        </header>
+
+        <main class="squarebg">
+            <div id="headerbutton">
+                <a href="index.html">
+                    <p>
+                        <i class="fa-solid fa-house"></i> Home
+                    </p>
+                </a>
+
+                <a href="church.html">
+                    <p>
+                        <i class="fa-solid fa-place-of-worship"></i> Church
+                    </p>
+                </a>
+
+                <a href="classroom.html">
+                    <p>
+                        <i class="fa-solid fa-school-flag"></i> Classroom
+                    </p>
+                </a>
+
+                <a href="community.html">
+                    <p>
+                        <i class="fa-solid fa-handshake-angle"></i> Community
+                    </p>
+                </a>
+
+                <a href="court.html">
+                    <p>
+                        <i class="fa-solid fa-baseball-bat-ball"></i> Court
+                    </p>
+                </a>
+
+                <a href="culture.html">
+                    <p>
+                        <i class="fa-solid fa-feather-pointed"></i> Culture
+                    </p>
+                </a>
+
+                <a href="aboutme.html">
+                    <p>
+                        <i class="fa-solid fa-circle-question"></i> About Me
+                    </p>
+                </a>
+            </div>
+
+            <div id="infobox">
+                <div id="infoleft">
+                    <div class="infoimg">
+                        <img src="" alt="Event Image" id="eventImage">
+                    </div>
+                </div>
+                <div id="inforight">
+                    <div class="infotext">
+                        <p class="point">Event:</p>
+                        <p class="info metatitle" id="eventTitle"></p>
+                        <p class="point">Organizer:</p>
+                        <p class="info" id="eventOrganizer"></p>
+                        <p class="point">Category:</p>
+                        <p class="info" id="eventCategory"></p>
+                        <p class="point">Date:</p>
+                        <p class="info" id="eventDate"></p>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="content">
+                <p class="parahead">
+                    What?
+                </p>
+                <p class="para metadesc">
+                    I attended an industry lecture titled “Designing Intuitive User Experiences: Key UI/UX Strategies” on August 22. The event was organized by the College of Computer Studies and held at Alfredo T. Ang Hall (ATA Hall), lasting approximately from 8am to 11:30am. It was attended by my Computer Studies classmates and facilitated by a young Software Developer and a UI/UX Designer. The session aimed to teach us about effective strategies for designing user-friendly and intuitive experiences.  As an audience I actively listen and take notes as an audience member, while the speakers led the discussion and my classmates participated by asking questions and engaging with the speakers.
+                </p>
+
+                <p class="parahead">
+                    So What?
+                </p>
+                <p class="para">
+                    I learned valuable concepts about intuitive design and how collaboration between developers and designers enhances user experience. Initially, I expected a formal and technical lecture, but I was surprised by how engaging and interactive the session was. The UI/UX Designer made a strong positive impression on me by highlighting the importance of empathy in designing user-friendly systems. The most satisfying part of the lecture was the way it simplified complex ideas, making them easy to understand, though some advanced technical terms were still a bit challenging. This activity showed me the value of creativity and user-centered thinking in software development.
+                </p>
+
+                <p class="parahead">
+                    Now What?
+                </p>
+                <p class="para">
+                    This lecture inspired me to explore UI/UX design further and apply what I learned to my future projects. It also reminded me of the importance of balancing creativity with technical skills in software development. I plan to continue learning about UI/UX by attending similar events and working with my classmates on design projects. This activity clearly demonstrated the benefits of industry lectures, as they offer both practical knowledge and inspiration. If I could attend this event again, I would prepare more questions to engage more actively with the speakers and maximize the learning experience.
+                </p>
+                
+                <br>
+                <p class="para">
+                    Because of this activity, I am more motivated to learn about UI/UX design and its impact on creating better software experiences.
+                </p>
+            </div>
+
+            <hr>
+
+            <div class="gallery">
+                <p>Gallery</p>
+                <div class="eventimg">
+                    <img src="img/uiux (1).jpg" alt="">
+                    <img src="img/uiux (2).jpg" alt="">
+                    <img src="img/uiux (3).jpg" alt="">
+                    <img src="img/uiux (4).jpg" alt="">
+                    <img src="img/uiux (5).jpg" alt="">
+                    <img src="img/uiux (6).jpg" alt="">
+                    <img src="img/uiux (7).jpg" alt="">
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div id="credits">
+                <h2>Webpage powered by HTML, CSS, and JS</h2>
+                <h2>[MMXXIV]</h2>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const title = document.querySelector('meta[name="title"]').getAttribute('content') || '';
+            const description = document.querySelector('meta[name="description"]').getAttribute('content') || '';
+            const imageSrc = document.getElementById('og-image').getAttribute('content') || '';
+
+            const descriptionParts = description.match(/\[(.*?)\]/g);
+
+            document.getElementById('eventTitle').textContent = title;
+            document.getElementById('eventImage').src = imageSrc;
+
+            if (descriptionParts && descriptionParts.length >= 3) {
+                document.getElementById('eventOrganizer').textContent = descriptionParts[0].replace(/[\[\]]/g, '').trim();
+                document.getElementById('eventCategory').textContent = descriptionParts[1].replace(/[\[\]]/g, '').trim();
+                document.getElementById('eventDate').textContent = descriptionParts[2].replace(/[\[\]]/g, '').trim();
+            } else {
+                document.getElementById('eventOrganizer').textContent = "Not available";
+                document.getElementById('eventCategory').textContent = "Not available";
+                document.getElementById('eventDate').textContent = "Not available";
+            }
+
+            document.title = title;
+            document.querySelector('meta[name="title"]').setAttribute('content', title);
+
+            const descWords = description.split(" ");
+            const truncatedDesc = descWords.length > 20 ? descWords.slice(0, 20).join(" ") + "..." : description;
+            document.querySelector('meta[name="description"]').setAttribute('content', truncatedDesc);
+        });
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="title" content="Mental Health Caravan: Mindful Minds"> 
+    <meta name="description" content="[Silliman University Guidance and Testing Division] [CLASSROOM] [November 20, 2024]"> 
+    <meta id="og-image" property="og:image" content="img/caravan (3).jpg">
+    
+    <title></title>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="GE10 WPE: SON MAGALLANES">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    
+    <div id="all">
+
+        <header>
+            <h1 id="Webtitle">GE10 WPE</h1>
+            <h2>SON MAGALLANES</h2>
+        </header>
+
+        <main class="squarebg">
+            <div id="headerbutton">
+                <a href="index.html">
+                    <p>
+                        <i class="fa-solid fa-house"></i> Home
+                    </p>
+                </a>
+
+                <a href="church.html">
+                    <p>
+                        <i class="fa-solid fa-place-of-worship"></i> Church
+                    </p>
+                </a>
+
+                <a href="classroom.html">
+                    <p>
+                        <i class="fa-solid fa-school-flag"></i> Classroom
+                    </p>
+                </a>
+
+                <a href="community.html">
+                    <p>
+                        <i class="fa-solid fa-handshake-angle"></i> Community
+                    </p>
+                </a>
+
+                <a href="court.html">
+                    <p>
+                        <i class="fa-solid fa-baseball-bat-ball"></i> Court
+                    </p>
+                </a>
+
+                <a href="culture.html">
+                    <p>
+                        <i class="fa-solid fa-feather-pointed"></i> Culture
+                    </p>
+                </a>
+
+                <a href="aboutme.html">
+                    <p>
+                        <i class="fa-solid fa-circle-question"></i> About Me
+                    </p>
+                </a>
+            </div>
+
+            <div id="infobox">
+                <div id="infoleft">
+                    <div class="infoimg">
+                        <img src="" alt="Event Image" id="eventImage">
+                    </div>
+                </div>
+                <div id="inforight">
+                    <div class="infotext">
+                        <p class="point">Event:</p>
+                        <p class="info metatitle" id="eventTitle"></p>
+                        <p class="point">Organizer:</p>
+                        <p class="info" id="eventOrganizer"></p>
+                        <p class="point">Category:</p>
+                        <p class="info" id="eventCategory"></p>
+                        <p class="point">Date:</p>
+                        <p class="info" id="eventDate"></p>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="content">
+                <p class="parahead">
+                    What?
+                </p>
+                <p class="para metadesc">
+                    I attended the Mental Health Caravan: Mindful Minds on November 20 at Silliman University Luce Auditorium, organized by the Silliman University Guidance and Testing Division. The session focused on mental health topics, including the dangers of self-diagnosis, managing stress, monitoring gadget use, and how to help yourself or others struggling with mental health issues. As I actively listen to the lecture. I was there with my friends, and the organizers led the event by sharing practical advice and strategies.
+                </p>
+
+                <p class="parahead">
+                    So What?
+                </p>
+                <p class="para">
+                    This session taught me the importance of properly addressing mental health and avoiding self-diagnosis, which can be dangerous. Initially, I thought it would just discuss stress management, but I was surprised by how detailed and practical the advice was. The speaker who explained the impact of excessive gadget use made a strong impression on me because it made me reflect on my own habits. The most satisfying part of the event was learning practical ways to manage stress and help others. I appreciated how the lecture emphasized the need to seek proper help rather than relying on assumptions.
+                </p>
+
+                <p class="parahead">
+                    Now What?
+                </p>
+                <p class="para">
+                    This experience opened my eyes to the importance of caring for my mental health and that of others. I learned that simple steps, like reducing gadget time and recognizing stress, can make a big difference. Moving forward, I plan to apply what I learned by being more mindful of my habits and encouraging others to seek professional help when needed. I see the benefits of this activity because it spreads awareness and equips people with knowledge to take better care of their mental well-being. If I could attend the event again, I would prepare questions to ask the speakers for more insight.
+                </p>
+                
+                <br>
+                <p class="para">
+                    Because of this activity, I am more aware of the importance of mental health and better equipped to support myself and others.
+                </p>
+            </div>
+
+            <hr>
+
+            <div class="gallery">
+                <p>Gallery</p>
+                <div class="eventimg">
+                    <img src="img/caravan (1).jpg" alt="">
+                    <img src="img/caravan (2).jpg" alt="">
+                    <img src="img/caravan (3).jpg" alt="">
+                    <img src="img/caravan (4).jpg" alt="">
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div id="credits">
+                <h2>Webpage powered by HTML, CSS, and JS</h2>
+                <h2>[MMXXIV]</h2>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const title = document.querySelector('meta[name="title"]').getAttribute('content') || '';
+            const description = document.querySelector('meta[name="description"]').getAttribute('content') || '';
+            const imageSrc = document.getElementById('og-image').getAttribute('content') || '';
+
+            const descriptionParts = description.match(/\[(.*?)\]/g);
+
+            document.getElementById('eventTitle').textContent = title;
+            document.getElementById('eventImage').src = imageSrc;
+
+            if (descriptionParts && descriptionParts.length >= 3) {
+                document.getElementById('eventOrganizer').textContent = descriptionParts[0].replace(/[\[\]]/g, '').trim();
+                document.getElementById('eventCategory').textContent = descriptionParts[1].replace(/[\[\]]/g, '').trim();
+                document.getElementById('eventDate').textContent = descriptionParts[2].replace(/[\[\]]/g, '').trim();
+            } else {
+                document.getElementById('eventOrganizer').textContent = "Not available";
+                document.getElementById('eventCategory').textContent = "Not available";
+                document.getElementById('eventDate').textContent = "Not available";
+            }
+
+            document.title = title;
+            document.querySelector('meta[name="title"]').setAttribute('content', title);
+
+            const descWords = description.split(" ");
+            const truncatedDesc = descWords.length > 20 ? descWords.slice(0, 20).join(" ") + "..." : description;
+            document.querySelector('meta[name="description"]').setAttribute('content', truncatedDesc);
+        });
+    </script>
+</body>
+
+</html>

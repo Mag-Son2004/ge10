@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta name="title" content="Book Bingo"> 
+    <meta name="description" content="[SU Library] [CLASSROOM] [August 21, 2024]"> 
+    <meta id="og-image" property="og:image" content="img/bingo (1).jpg">
+    
+    <title></title>
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="GE10 WPE: SON MAGALLANES">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    
+    <div id="all">
+
+        <header>
+            <h1 id="Webtitle">GE10 WPE</h1>
+            <h2>SON MAGALLANES</h2>
+        </header>
+
+        <main class="squarebg">
+            <div id="headerbutton">
+                <a href="index.html">
+                    <p>
+                        <i class="fa-solid fa-house"></i> Home
+                    </p>
+                </a>
+
+                <a href="church.html">
+                    <p>
+                        <i class="fa-solid fa-place-of-worship"></i> Church
+                    </p>
+                </a>
+
+                <a href="classroom.html">
+                    <p>
+                        <i class="fa-solid fa-school-flag"></i> Classroom
+                    </p>
+                </a>
+
+                <a href="community.html">
+                    <p>
+                        <i class="fa-solid fa-handshake-angle"></i> Community
+                    </p>
+                </a>
+
+                <a href="court.html">
+                    <p>
+                        <i class="fa-solid fa-baseball-bat-ball"></i> Court
+                    </p>
+                </a>
+
+                <a href="culture.html">
+                    <p>
+                        <i class="fa-solid fa-feather-pointed"></i> Culture
+                    </p>
+                </a>
+
+                <a href="aboutme.html">
+                    <p>
+                        <i class="fa-solid fa-circle-question"></i> About Me
+                    </p>
+                </a>
+            </div>
+
+            <div id="infobox">
+                <div id="infoleft">
+                    <div class="infoimg">
+                        <img src="" alt="Event Image" id="eventImage">
+                    </div>
+                </div>
+                <div id="inforight">
+                    <div class="infotext">
+                        <p class="point">Event:</p>
+                        <p class="info metatitle" id="eventTitle"></p>
+                        <p class="point">Organizer:</p>
+                        <p class="info" id="eventOrganizer"></p>
+                        <p class="point">Category:</p>
+                        <p class="info" id="eventCategory"></p>
+                        <p class="point">Date:</p>
+                        <p class="info" id="eventDate"></p>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="content">
+                <p class="parahead">
+                    What?
+                </p>
+                <p class="para metadesc">
+                    I attended an event called Book Bingo on August 21 at Alfredo T. Ang Hall (ATA Hall), organized by the SU Library. The session aimed to promote a love for reading, encourage participants to explore diverse literary works, and provide a fun way to test luck and skills. As I participated, enjoying the activities with my friends , It was also really fun . The speakers introduced themselves, shared their ideas about the importance of reading, and organized games to keep the audience engaged.
+                </p>
+
+                <p class="parahead">
+                    So What?
+                </p>
+                <p class="para">
+                    The event helped me appreciate how fun and interactive activities like Book Bingo can encourage reading. I expected it to be a simple discussion, but I was surprised by how lively and engaging it was, especially with the games. The speakers made a strong impression with their enthusiasm and efforts to promote reading. The most satisfying part was participating in the game while enjoying a sense of togetherness with my friends and the other attendees. I liked the mix of fun and learning, which made the experience enjoyable and meaningful.
+                </p>
+
+                <p class="parahead">
+                    Now What?
+                </p>
+                <p class="para">
+                    This event made me realize the importance of promoting reading in creative ways. I learned that games like Book Bingo can make reading more exciting and accessible for everyone. Moving forward, I plan to explore new books and genres to expand my knowledge. I would also like to attend more activities organized by the library to stay connected and involved. If I could join this event again, I would participate more actively and encourage others to attend as well.
+                </p>
+                
+                <br>
+                <p class="para">
+                    Because of this activity, I am more inspired to read and discover new books while sharing the joy of reading with others.
+                </p>
+            </div>
+
+            <hr>
+
+            <div class="gallery">
+                <p>Gallery</p>
+                <div class="eventimg">
+                    <img src="img/bingo (1).jpg" alt="">
+                    <img src="img/bingo (2).jpg" alt="">
+                    <img src="img/bingo (3).jpg" alt="">
+                    <img src="img/bingo (4).jpg" alt="">
+                    <img src="img/bingo (5).jpg" alt="">
+                    <img src="img/bingo (6).jpg" alt="">
+                </div>
+            </div>
+        </main>
+
+        <footer>
+            <div id="credits">
+                <h2>Webpage powered by HTML, CSS, and JS</h2>
+                <h2>[MMXXIV]</h2>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const title = document.querySelector('meta[name="title"]').getAttribute('content') || '';
+            const description = document.querySelector('meta[name="description"]').getAttribute('content') || '';
+            const imageSrc = document.getElementById('og-image').getAttribute('content') || '';
+
+            const descriptionParts = description.match(/\[(.*?)\]/g);
+
+            document.getElementById('eventTitle').textContent = title;
+            document.getElementById('eventImage').src = imageSrc;
+
+            if (descriptionParts && descriptionParts.length >= 3) {
+                document.getElementById('eventOrganizer').textContent = descriptionParts[0].replace(/[\[\]]/g, '').trim();
+                document.getElementById('eventCategory').textContent = descriptionParts[1].replace(/[\[\]]/g, '').trim();
+                document.getElementById('eventDate').textContent = descriptionParts[2].replace(/[\[\]]/g, '').trim();
+            } else {
+                document.getElementById('eventOrganizer').textContent = "Not available";
+                document.getElementById('eventCategory').textContent = "Not available";
+                document.getElementById('eventDate').textContent = "Not available";
+            }
+
+            document.title = title;
+            document.querySelector('meta[name="title"]').setAttribute('content', title);
+
+            const descWords = description.split(" ");
+            const truncatedDesc = descWords.length > 20 ? descWords.slice(0, 20).join(" ") + "..." : description;
+            document.querySelector('meta[name="description"]').setAttribute('content', truncatedDesc);
+        });
+    </script>
+</body>
+
+</html>
