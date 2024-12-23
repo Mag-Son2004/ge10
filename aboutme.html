@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta property="og:type" content="website">
+    
+    <title></title>
+    <meta name="title" content=""> 
+    <meta name="description" content=""> 
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="GE10 WPE: SON MAGALLANES">
+    <meta id="og-image" property="og:image" content="">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="fav.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/cat.css">
+    <link rel="stylesheet" href="css/in.css">
+    <link rel="stylesheet" href="css/aboutme.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    
+    <div id="all">
+
+        <header>
+            <h1 id="Webtitle">GE10 WPE</h1>
+            <h2>SON MAGALLANES</h2>
+        </header>
+
+        <main class="squarebg">
+            <div id="headerbutton">
+                <a href="index.html">
+                    <p>
+                        <i class="fa-solid fa-house"></i> Home
+                    </p>
+                </a>
+
+                <a href="church.html">
+                    <p>
+                        <i class="fa-solid fa-place-of-worship"></i> Church
+                    </p>
+                </a>
+
+                <a href="classroom.html">
+                    <p>
+                        <i class="fa-solid fa-school-flag"></i> Classroom
+                    </p>
+                </a>
+
+                <a href="community.html">
+                    <p>
+                        <i class="fa-solid fa-handshake-angle"></i> Community
+                    </p>
+                </a>
+
+                <a href="court.html">
+                    <p>
+                        <i class="fa-solid fa-baseball-bat-ball"></i> Court
+                    </p>
+                </a>
+
+                <a href="culture.html">
+                    <p>
+                        <i class="fa-solid fa-feather-pointed"></i> Culture
+                    </p>
+                </a>
+
+                <a href="aboutme.html">
+                    <p>
+                        <i class="fa-solid fa-circle-question"></i> About Me
+                    </p>
+                </a>
+            </div>
+
+            
+
+            <div class="content">
+
+            
+                <h1 class="amtitle">ABOUT ME</h1>
+
+                <div class="division">
+
+                    <div class="div1">
+                        <img src="miku.jpg" alt="">
+                        <h2>Photo of Son Magallanes</h2>
+                    </div>
+
+                    <div class="div2">
+<pre>
+Name: Son E. Magallanes
+Nickname: Hazel Eyes
+Age:20
+Blood Type: O+
+
+Talent:
+- Drawing
+
+Hobby/Interest:
+- Skateboard
+- Electric Guitar
+- Cars
+- SunFlower
+- Diecast Collector (Small Metal cars)
+- Cats
+- Pokemon
+
+- siya 😍 
+</pre>
+                    </div>
+
+
+                </div>
+
+
+
+
+
+
+            </div>
+
+        </main>
+
+        <footer>
+            <div id="credits">
+                <h2>Webpage powered by HTML, CSS, and JS</h2>
+                <h2>[MMXXIV]</h2>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    // Set og:image
+    const firstImage = document.querySelector('.eventimg img'); // Select from the gallery
+    if (firstImage) {
+        const ogImageMeta = document.getElementById('og-image');
+        ogImageMeta.content = firstImage.src;
+    }
+
+
+    // Set title and description
+    const metaTitle = document.querySelector('.metatitle').textContent;
+    const metaDesc = document.querySelector('.metadesc').textContent;
+
+    document.title = metaTitle;
+    document.querySelector('meta[name="title"]').setAttribute('content', metaTitle); // Use setAttribute
+
+    const descWords = metaDesc.split(" ");
+    const truncatedDesc = descWords.length > 20 ? descWords.slice(0, 20).join(" ") + "..." : metaDesc;
+    document.querySelector('meta[name="description"]').setAttribute('content', truncatedDesc); // Use setAttribute
+});
+    </script>
+</body>
+
+</html>
